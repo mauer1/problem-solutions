@@ -1,6 +1,6 @@
-# question-solutions
+# problem-solutions
 
-Set of questions & solutions from prior interviews.
+Set of problems & solutions from prior interviews & code challenges.
 
 ## Getting Started
 
