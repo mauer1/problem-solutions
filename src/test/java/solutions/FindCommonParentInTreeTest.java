@@ -47,7 +47,7 @@ public class FindCommonParentInTreeTest {
 	public void findClosestCommonParent() {
 		Node node1 = solution.new Node("E");
 		Node node2 = solution.new Node("I");
-		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, highestNode, node1, node2);
+		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, node1, node2);
 		assertTrue(common != null);
 		assertTrue(common.getName().contentEquals("B"));
 	}
@@ -56,7 +56,7 @@ public class FindCommonParentInTreeTest {
 	public void findClosestCommonParent2() {
 		Node node1 = solution.new Node("G");
 		Node node2 = solution.new Node("H");
-		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, highestNode, node1, node2);
+		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, node1, node2);
 		assertTrue(common != null);
 		assertTrue(common.getName().contentEquals("A"));
 	}
@@ -65,7 +65,7 @@ public class FindCommonParentInTreeTest {
 	public void findClosestCommonParent3() {
 		Node node1 = solution.new Node("I");
 		Node node2 = solution.new Node("H");
-		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, highestNode, node1, node2);
+		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, node1, node2);
 		assertTrue(common != null);
 		assertTrue(common.getName().contentEquals("D"));
 	}
