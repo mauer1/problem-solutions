@@ -1,4 +1,4 @@
-package misc;
+package solutions;
 
 import java.util.Comparator;
 import java.util.stream.IntStream;

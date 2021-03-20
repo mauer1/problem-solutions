@@ -1,11 +1,11 @@
-package misc;
+package solutions;
 
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import misc.FindCommonParentInTree.Node;
+import solutions.FindCommonParentInTree.Node;
 
 public class FindCommonParentInTreeTest {
 
@@ -18,23 +18,23 @@ public class FindCommonParentInTreeTest {
 		Node H = solution.new Node("H");
 		Node I = solution.new Node("I");
 		Node D = solution.new Node("D");
-		D.addReportee(H);
-		D.addReportee(I);
+		D.addChild(H);
+		D.addChild(I);
 
 		Node E = solution.new Node("E");
 		Node B = solution.new Node("B");
-		B.addReportee(D);
-		B.addReportee(E);
+		B.addChild(D);
+		B.addChild(E);
 
 		Node F = solution.new Node("F");
 		Node G = solution.new Node("G");
 		Node C = solution.new Node("C");
-		C.addReportee(F);
-		C.addReportee(G);
+		C.addChild(F);
+		C.addChild(G);
 
 		Node A = solution.new Node("A");
-		A.addReportee(B);
-		A.addReportee(C);
+		A.addChild(B);
+		A.addChild(C);
 		return A; // highest node
 	}
 
@@ -44,7 +44,7 @@ public class FindCommonParentInTreeTest {
 	}
 
 	@Test
-	public void testfindClosestCommonParent() {
+	public void findClosestCommonParent() {
 		Node node1 = solution.new Node("E");
 		Node node2 = solution.new Node("I");
 		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, highestNode, node1, node2);
@@ -53,7 +53,7 @@ public class FindCommonParentInTreeTest {
 	}
 
 	@Test
-	public void testfindClosestCommonParent2() {
+	public void findClosestCommonParent2() {
 		Node node1 = solution.new Node("G");
 		Node node2 = solution.new Node("H");
 		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, highestNode, node1, node2);
@@ -62,7 +62,7 @@ public class FindCommonParentInTreeTest {
 	}
 
 	@Test
-	public void testfindClosestCommonParent3() {
+	public void findClosestCommonParent3() {
 		Node node1 = solution.new Node("I");
 		Node node2 = solution.new Node("H");
 		Node common = FindCommonParentInTree.findClosestCommonParent(highestNode, highestNode, node1, node2);
