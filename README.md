@@ -1,6 +1,4 @@
-# problem-solutions
-
-Set of problems & solutions from prior interviews & code challenges.
+# Code Problems and Solutions
 
 ## Getting Started
 
@@ -8,23 +6,16 @@ Use included JUnit tests to run and examine code.
 
 ### Prerequisites
 
-Java 1.8
+- [Maven](https://maven.apache.org/)
+- [Java 1.8 JDK](https://developers.redhat.com/products/openjdk/download)
 
 ## Running the tests
 
-Recommend running tests in your favorite IDE, or use "mvn test".
+Run `mvn test` or use your favorite IDE to run individually.
 
-## Deployment
+## Author
 
-Although Maven will package .jar, this code is not meant to be deployed.
-
-## Built With
-
-* [Maven](https://maven.apache.org/) - Dependency Management
-
-## Authors
-
-* **mauer1** - *Initial work* - [mauer1](https://github.com/mauer1)
+- [mauer1](https://github.com/mauer1)
 
 ## License
 
