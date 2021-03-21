@@ -1,6 +1,0 @@
-- name: Publish Unit Test Results
-  uses: EnricoMi/publish-unit-test-result-action@v1.9
-  with:
-    # GitHub API Access Token
-    github_token: ${{ github.token }}
-    files: target/surefire-reports/*.xml
