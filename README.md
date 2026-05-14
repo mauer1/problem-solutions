@@ -1,26 +1,18 @@
-# Code Problems and Solutions
+## Problem Solutions
 
-## Getting Started
+A collection of solutions to various coding problems in Java.
 
-Use included JUnit tests to run and examine code.
+### Recent Updates
+- **Modernized build**: Java 26, JUnit 5 (with Vintage engine for backward compatibility)
+- Updated GitHub Actions workflow for latest JDK
+- Added LeetCode #94 Binary Tree Inorder Traversal and #70 Climbing Stairs
+- Added LeetCode #3 Longest Substring Without Repeating Characters
 
-### Prerequisites
+## Setup
 
-- [Maven](https://maven.apache.org/)
-- [Java 1.8 JDK](https://developers.redhat.com/products/openjdk/download)
-
-## Running the tests
-
-Run `mvn test` or use your favorite IDE to run individually.
-
-## Author
-
-- [mauer1](https://github.com/mauer1)
+```bash
+mvn clean test
+```
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
-* Thanks to the interviewers and problem authors.
+MIT
